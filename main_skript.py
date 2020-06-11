@@ -261,7 +261,7 @@ def get_min():
     return min_sell_bank + "- " + min_sell + ".  "+ "Адреса филиалов-  " + min_sell_adres_bank
 
 bot_token = os.environ.get('token')
-bot = telebot.TeleBot("1052960119:AAFqeaIuvo2_-QfLhkBGY2GAuabZUnwgJy0")
+bot = telebot.TeleBot(bot_token)
 keyboard_main = telebot.types.ReplyKeyboardMarkup(True, True)
 keyboard_main.row('Главное меню')
 
