@@ -2,7 +2,7 @@ import telebot
 import requests
 from bs4 import BeautifulSoup
 import time
-
+import os
 chet = []
 
 banki_i_kursi_USD_buy = []
@@ -208,8 +208,8 @@ def get_max_adres():
         return "г. Новополоцк, ул. Молодежная, 166А"
     elif max_buy_bank == "Приорбанк":
         return "г. Новополоцк, ул. Молодежная, 213"
-
-bot = telebot.TeleBot(token= token)
+bot_token = os.environ.get('token')
+bot = telebot.TeleBot(bot_token)
 keyboard_main = telebot.types.ReplyKeyboardMarkup(True, True)
 keyboard_main.row('Главное меню')
 
