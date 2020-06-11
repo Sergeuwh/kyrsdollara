@@ -214,7 +214,7 @@ keyboard_main = telebot.types.ReplyKeyboardMarkup(True, True)
 keyboard_main.row('Главное меню')
 
 keyboard_vopr = telebot.types.ReplyKeyboardMarkup(True, True)
-keyboard_vopr.row('Продать доллар банку', 'Продать доллар банку')
+keyboard_vopr.row('Продать доллар банку', 'Купить доллар у банка')
 
 keyboard_yes_or_no2 = telebot.types.ReplyKeyboardMarkup(True, True)
 keyboard_yes_or_no2.row('Интересует ', 'Главное меню')
