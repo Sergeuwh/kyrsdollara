@@ -214,7 +214,7 @@ keyboard_main = telebot.types.ReplyKeyboardMarkup(True, True)
 keyboard_main.row('Главное меню')
 
 keyboard_vopr = telebot.types.ReplyKeyboardMarkup(True, True)
-keyboard_vopr.row('Покупка доллара', 'Продажа доллара')
+keyboard_vopr.row('Продать доллар банку', 'Продать доллар банку')
 
 keyboard_yes_or_no2 = telebot.types.ReplyKeyboardMarkup(True, True)
 keyboard_yes_or_no2.row('Интересует ', 'Главное меню')
@@ -237,7 +237,7 @@ def send_text(message):
         bot.send_message(message.chat.id, get_max())
         time.sleep(0.6)
         bot.send_message(message.chat.id, "Адреса отделений- " + get_max_adres(), reply_markup = keyboard_main)
-    if message.text == 'Продать  доллар банку':
+    if message.text == 'Продать доллар банку':
         bot.send_message(message.chat.id, 'Лучший курс доллара на сегодня')
         time.sleep(0.6)
         bot.send_message(message.chat.id, get_min())
