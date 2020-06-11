@@ -272,7 +272,7 @@ keyboard_yes_or_no2 = telebot.types.ReplyKeyboardMarkup(True, True)
 keyboard_yes_or_no2.row('Интересует ', 'Главное меню')
 
 keyboard_vopr_for_mapa = telebot.types.ReplyKeyboardMarkup(True, True)
-keyboard_vopr_for_mapa.row('Покупка доллара!', 'Продажа доллара!')
+keyboard_vopr_for_mapa.row('Купить доллар у банка!', 'Продать доллар банку!')
 @bot.message_handler(content_types=['text'])
 def send_text(message):
     if message.text == '/start':
