@@ -209,7 +209,7 @@ def get_max_adres():
     elif max_buy_bank == "Приорбанк":
         return "г. Новополоцк, ул. Молодежная, 213"
 bot_token = os.environ.get('token')
-bot = telebot.TeleBot(bot_token)
+bot = telebot.TeleBot(str(bot_token))
 keyboard_main = telebot.types.ReplyKeyboardMarkup(True, True)
 keyboard_main.row('Главное меню')
 
