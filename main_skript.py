@@ -245,14 +245,14 @@ def send_text(message):
         bot.send_message(message.chat.id, "Адреса отделений- " + get_min_adres(), reply_markup = keyboard_main)
     if message.text == 'Мама' or message.text == 'Папа' or message.text == 'мама' or message.text == 'папа':
         bot.send_message(message.chat.id, "Выбери пожалуста то, что тебя интересует)))", reply_markup = keyboard_vopr_for_mapa)
-    if message.text == 'Покупка доллара!':
+    if message.text == 'Продажа доллара!':
         all = get_for_ma_or_pa()
         for i in range(len(all)):
             bot.send_message(message.chat.id, all[i])
             if i % 2 != 0:
                 bot.send_message(message.chat.id, "###########")
         bot.send_message(message.chat.id, "В главное меню?)", reply_markup=keyboard_main)
-    if message.text == 'Продажа доллара!':
+    if message.text == 'Покупка доллара!':
         all = get_for_ma_or_pa_sell()
         for i in range(len(all)):
             bot.send_message(message.chat.id, all[i])
