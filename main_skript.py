@@ -283,11 +283,11 @@ def send_text(message):
     if message.text == 'Главное меню':
         chet.append("1")
         bot.send_message(message.chat.id, "Что вас интересует?", reply_markup = keyboard_vopr)
-    if message.text == 'Купить доллар у банка':
+    if message.text == 'Продать доллар банку':
         bot.send_message(message.chat.id, 'Лучший курс доллара на сегодня')
         time.sleep(0.6)
         bot.send_message(message.chat.id, get_max(), reply_markup = keyboard_main)
-    if message.text == 'Продать доллар банку':
+    if message.text == 'Купить доллар у банка':
         bot.send_message(message.chat.id, 'Лучший курс доллара на сегодня')
         time.sleep(0.6)
         bot.send_message(message.chat.id, get_min(), reply_markup = keyboard_main)
