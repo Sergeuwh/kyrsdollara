@@ -293,14 +293,14 @@ def send_text(message):
         bot.send_message(message.chat.id, get_min(), reply_markup = keyboard_main)
     if message.text == 'Мама' or message.text == 'Папа' or message.text == 'мама' or message.text == 'папа':
         bot.send_message(message.chat.id, "Выбери пожалуста то, что тебя интересует)))", reply_markup = keyboard_vopr_for_mapa)
-    if message.text == 'Продать доллар банку!':
+    if message.text == 'Купить доллар у банка!':
         all = get_for_ma_or_pa()
         for i in range(len(all)):
             bot.send_message(message.chat.id, all[i])
             if i % 2 != 0:
                 bot.send_message(message.chat.id, "###########")
         bot.send_message(message.chat.id, "В главное меню?)", reply_markup=keyboard_main)
-    if message.text == 'Купить доллар у банка!':
+    if message.text == 'Продать доллар банку!':
         all = get_for_ma_or_pa_sell()
         for i in range(len(all)):
             bot.send_message(message.chat.id, all[i])
