@@ -22,7 +22,7 @@ def get_kurs_buy():
         if len(list(item.split())) != 1:
             item = str(item).replace("<td ", "")
             item = str(item).replace('class="best">', "")
-        if i == 35:
+                if i == 35:
             banki_i_kursi_USD_buy.append({"Абсолютбанк": item})
         elif i == 36:
             banki_i_kursi_USD_sell.append({"Абсолютбанк": item})
@@ -58,17 +58,17 @@ def get_kurs_buy():
             banki_i_kursi_USD_buy.append({"БПС-Сбербанк": item})
         elif i == 226:
             banki_i_kursi_USD_sell.append({"БПС-Сбербанк": item})
-        elif i == 254:
-            banki_i_kursi_USD_buy.append({"Идея Банк": item})
         elif i == 255:
+            banki_i_kursi_USD_buy.append({"Идея Банк": item})
+        elif i == 256:
             banki_i_kursi_USD_sell.append({"Идея Банк": item})
-        elif i == 269:
+        elif i == 262:
             banki_i_kursi_USD_buy.append({"Паритетбанк": item})
-        elif i == 270:
+        elif i == 263:
             banki_i_kursi_USD_sell.append({"Паритетбанк": item})
-        elif i == 284:
-            banki_i_kursi_USD_buy.append({"Приорбанк": item})
         elif i == 285:
+            banki_i_kursi_USD_buy.append({"Приорбанк": item})
+        elif i == 286:
             banki_i_kursi_USD_sell.append({"Приорбанк": item})
     return banki_i_kursi_USD_buy
 def get_kurs_sell():
