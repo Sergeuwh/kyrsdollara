@@ -135,6 +135,18 @@ def get_kurs_sell():
         elif i == 284:
             banki_i_kursi_USD_buy.append({"Приорбанк": item})
         elif i == 285:
+            banki_i_kursi_USD_sell.append({"Приорбанк": item})            
+        elif i == 254:
+            banki_i_kursi_USD_buy.append({"Идея Банк": item})
+        elif i == 252:
+            banki_i_kursi_USD_sell.append({"Идея Банк": item})
+        elif i == 269:
+            banki_i_kursi_USD_buy.append({"Паритетбанк": item})
+        elif i == 267:
+            banki_i_kursi_USD_sell.append({"Паритетбанк": item})
+        elif i == 284:
+            banki_i_kursi_USD_buy.append({"Приорбанк": item})
+        elif i == 283:
             banki_i_kursi_USD_sell.append({"Приорбанк": item})
     return banki_i_kursi_USD_sell
 def get_max():
